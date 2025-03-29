@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Max\\Documents\\Projects\\Break-The-Casino-CTF\\CTFd\\themes\\casinobreak\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Max\\Documents\\Projects\\Break-The-Casino-CTF\\CTFd\\themes\\casinobreak\\templates\\base.html||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\base.html||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Max\\Documents\\Projects\\Break-The-Casino-CTF\\CTFd\\themes\\casinobreak\\assets\\css\\challenge-board.scss||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\css\\challenge-board.scss||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
@@ -19,15 +23,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "base.html",
+              "DocumentMoniker": "C:\\Users\\Max\\Documents\\Projects\\Break-The-Casino-CTF\\CTFd\\themes\\casinobreak\\templates\\base.html",
+              "RelativeDocumentMoniker": "templates\\base.html",
+              "ToolTip": "C:\\Users\\Max\\Documents\\Projects\\Break-The-Casino-CTF\\CTFd\\themes\\casinobreak\\templates\\base.html*",
+              "RelativeToolTip": "templates\\base.html*",
+              "ViewState": "AgIAADoAAAAAAAAAAAAgwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-28T22:40:53.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "challenge-board.scss",
               "DocumentMoniker": "C:\\Users\\Max\\Documents\\Projects\\Break-The-Casino-CTF\\CTFd\\themes\\casinobreak\\assets\\css\\challenge-board.scss",
               "RelativeDocumentMoniker": "assets\\css\\challenge-board.scss",
               "ToolTip": "C:\\Users\\Max\\Documents\\Projects\\Break-The-Casino-CTF\\CTFd\\themes\\casinobreak\\assets\\css\\challenge-board.scss",
               "RelativeToolTip": "assets\\css\\challenge-board.scss",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-25T10:29:46.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T10:29:46.122Z"
             }
           ]
         }
