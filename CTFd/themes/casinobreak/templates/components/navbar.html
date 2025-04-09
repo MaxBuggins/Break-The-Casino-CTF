@@ -23,7 +23,7 @@
     <div class="collapse navbar-collapse" id="base-navbars">
       <ul class="navbar-nav me-auto">
         {% for page in Plugins.user_menu_pages %}
-          <li class="nav-item">
+          <li class="nav-item blue-item">
             <a class="nav-link" href="{{ page.route }}" {% if page.link_target %}target="{{ page.link_target }}"{% endif %}>
               {{ page.title }}
             </a>
@@ -31,14 +31,14 @@
         {% endfor %}
 
         {% if Configs.account_visibility != 'admins' %}
-          <li class="nav-item">
+          <li class="nav-item purple-item">
             <a class="nav-link" href="{{ url_for('users.listing') }}">
               {% trans %}Users{% endtrans %}
             </a>
           </li>
 
           {% if Configs.user_mode == 'teams' %}
-            <li class="nav-item">
+            <li class="nav-item purple-item">
               <a class="nav-link" href="{{ url_for('teams.listing') }}">
                 {% trans %}Teams{% endtrans %}
               </a>
@@ -47,14 +47,14 @@
         {% endif %}
 
         {% if Configs.account_visibility != 'admins' and Configs.score_visibility != 'admins' %}
-          <li class="nav-item">
+          <li class="nav-item purple-item">
             <a class="nav-link" href="{{ url_for('scoreboard.listing') }}">
               {% trans %}Scoreboard{% endtrans %}
             </a>
           </li>
         {% endif %}
 
-        <li class="nav-item">
+        <li class="nav-item red-item">
           <a class="nav-link" href="{{ url_for('challenges.listing') }}">
             {% trans %}Challenges{% endtrans %}
           </a>
@@ -67,7 +67,7 @@
         {% if authed() %}
 
           {% if is_admin() %}
-            <li class="nav-item">
+            <li class="nav-item purple-item">
               <a class="nav-link" href="{{ url_for('admin.view') }}">
                 <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="{% trans %}Admin Panel{% endtrans %}">
                     <i class="fas fa-wrench d-none d-md-inline d-lg-none"></i>
@@ -80,7 +80,7 @@
             </li>
           {% endif %}
 
-          <li class="nav-item">
+          <li class="nav-item purple-item">
             <a class="nav-link" href="{{ url_for('views.notifications') }}">
               <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="{% trans %}Notifications{% endtrans %}">
                 <i class="fas fa-bell d-none d-md-inline d-lg-none"></i>
@@ -94,7 +94,7 @@
           </li>
 
           {% if Configs.user_mode == "teams" %}
-            <li class="nav-item">
+            <li class="nav-item purple-item">
               <a class="nav-link" href="{{ url_for('teams.private') }}">
                 <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="{% trans %}Team{% endtrans %}">
                   <i class="fas fa-users d-none d-md-inline d-lg-none"></i>
@@ -107,7 +107,7 @@
             </li>
           {% endif %}
 
-          <li class="nav-item">
+          <li class="nav-item purple-item">
             <a class="nav-link" href="{{ url_for('users.private') }}">
               <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="{% trans %}Profile{% endtrans %}">
                 <i class="fas fa-user-circle d-none d-md-inline d-lg-none"></i>
@@ -119,7 +119,7 @@
             </a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item purple-item">
             <a class="nav-link" href="{{ url_for('views.settings') }}">
               <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="{% trans %}Settings{% endtrans %}">
                 <i class="fas fa-cogs d-none d-md-inline d-lg-none"></i>
@@ -131,7 +131,7 @@
             </a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item purple-item">
             <a class="nav-link" href="{{ url_for('auth.logout') }}">
               <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="{% trans %}Logout{% endtrans %}">
                 <i class="fas fa-sign-out-alt d-none d-md-inline d-lg-none"></i>
@@ -146,7 +146,7 @@
         {% else %}
 
           {% if registration_visible() %}
-            <li class="nav-item">
+            <li class="nav-item purple-item">
               <a class="nav-link" href="{{ url_for('auth.register') }}">
                 <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="{% trans %}Register{% endtrans %}">
                   <i class="fas fa-user-plus d-none d-md-inline d-lg-none"></i>
@@ -159,7 +159,7 @@
             </li>
           {% endif %}
 
-          <li class="nav-item">
+          <li class="nav-item purple-item">
             <a class="nav-link" href="{{ url_for('auth.login') }}">
               <span data-bs-toggle="tooltip" data-bs-placement="bottom" title="{% trans %}Login{% endtrans %}">
                 <i class="fas fa-sign-in-alt d-none d-md-inline d-lg-none"></i>
@@ -172,7 +172,7 @@
           </li>
         {% endif %}
 
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown purple-item">
           <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fas fa-language d-none d-md-inline"></i>
             <span class="d-sm-inline d-md-none">
