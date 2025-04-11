@@ -2,6 +2,8 @@ import requests
 from flask import Blueprint, abort
 from flask import current_app as app
 from flask import redirect, render_template, request, session, url_for
+import random # To ignor emails
+import string # To ignor emails
 
 from CTFd.cache import clear_team_session, clear_user_session
 from CTFd.exceptions.email import (
@@ -151,8 +153,11 @@ def reset_password(data=None):
             return redirect(url_for("auth.login"))
 
     if request.method == "POST":
-        email_address = request.form["email"].strip()
-        user = Users.query.filter_by(email=email_address).first()
+        #email_address = 'NoEmailEddy'.join(random.choice(string.ascii_lowercase) for i in range(5)) + '@example.com' #Remove email requirement
+
+        email_address = request.form["email"].strip() #if you want email functionality back use this
+        user = Users.query.filter_by(email=email_address).first() # instead of this
+        # You will need to add functionality to the site aswell on register page
 
         get_errors()
 
