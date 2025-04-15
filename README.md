@@ -1,8 +1,8 @@
-### A all inclucded Capture the Flag project created as our Capstone project at UniSA
+### An all inclusive Capture the Flag project created as our Capstone project for UniSA.
 
 Created by: Max Buggins, Matthew Long, Uzair Hussain
 
-You have been tasked with breaking into and exploiting an ilegal casino, you will need to use a range of techniques including:
+You have been tasked with breaking into and exploiting an illegal casino, you will need to use a range of techniques including:
 - Brute Force
 - Cryptography
 - Reverse Engenering

@@ -14,5 +14,5 @@ Example: (my_user@my_pc:~/Downloads/CTFd$ docker compose up
     a. Check available linux distros available : wsl --list --online
     b. Choose the one you want (I chose Ubuntu, the 1st option) : wsl --install -d {DISTRO-NAME} e.g. wsl --install -d Ubuntu
     c. You might get an error about a missing WLS update while installing, go on google with the error and you will find the link to the installation of that update.
-    Install Docker (Docker Desktop Installer.exe
+    Install Docker (Docker Desktop Installer.exe)
 
