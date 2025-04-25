@@ -33,3 +33,4 @@ coverage.xml
 
 .DS_Store
 .ctfd_secret_key
+.data/mysql/ib_logfile0
