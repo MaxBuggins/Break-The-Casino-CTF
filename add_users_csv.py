@@ -25,7 +25,7 @@ def main():
 
     for user in users:
         # Note that the notify parameter is being passed here so CTFd will send the 
-        # user an email with their credentials after the account is created
+        # user an email with their credentials after the account is created if mail server settings are configured.
         r = s.post(
             f"{url}/api/v1/users?notify=true",
             json={
