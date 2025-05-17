@@ -17,14 +17,14 @@ intro_lure() {
 part1="LTM0Ljg0"
 part2="MzQyNjVf"
 part3="MTM4LjYz"
-part4="Mjg1OTA="
+part4="Mjg1OT"
 part5="Noenvlst345"
 part6="Msdfernv23"
-payload="${part1}${part2}${part3}${part4}"  
+payload="${part1}${part2}${part3}${part4}$(printf '\u0041\u003D')"
 
 # Red herring functions
 fdecrypter() {
-    echo "01001010 11001100 00110011 10101010"
+    echo "01001010 11001100 00110011 10101010"uioj
 }
 
 cipher_mystery() {
